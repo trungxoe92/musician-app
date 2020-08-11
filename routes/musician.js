@@ -5,6 +5,11 @@ const jsonParser = bodyParser.json();
 const schema = require('../store/schema');
 
 // healthcheck
+router.get('/trung', (req, res) => {
+  res.status('200').send("Status: ok!");
+});
+
+// healthcheck
 router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
 });
